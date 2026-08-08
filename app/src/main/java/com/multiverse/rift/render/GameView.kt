@@ -441,6 +441,10 @@ class GameView(context: Context, private val game: GameState) : View(context) {
                     Theme.TEXT_DIM, Theme.body, Paint.Align.CENTER
                 )
             }
+            // Замена не обязательна — от призыва всегда можно отказаться.
+            val skipW = w * 0.5f
+            rect.set((w - skipW) / 2f, slotY + slotH + u * 3f, (w + skipW) / 2f, slotY + slotH + u * 14f)
+            button(canvas, "skip", rect, "ОСТАВИТЬ ОТРЯД", accent = Theme.TEXT_FAINT)
         } else {
             val bw = if (game.canSkipSummon) w * 0.44f else w * 0.7f
             val acceptLeft = if (game.canSkipSummon) u * 3f else (w - bw) / 2f
