@@ -10,3 +10,9 @@ captures/
 *.apk
 *.aab
 *.keystore
+
+# Godot
+godot/.godot/
+godot/android/
+build/
+*.tpz

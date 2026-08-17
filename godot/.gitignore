@@ -1,6 +1,3 @@
-
-# Godot
-godot/.godot/
-godot/android/
-build/
-*.tpz
+# Кеш импорта Godot и временная папка сборки Android
+.godot/
+android/
