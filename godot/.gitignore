@@ -1,0 +1,6 @@
+
+# Godot
+godot/.godot/
+godot/android/
+build/
+*.tpz
